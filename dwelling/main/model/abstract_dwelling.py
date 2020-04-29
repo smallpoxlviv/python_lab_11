@@ -3,8 +3,6 @@ from abc import abstractmethod
 import location
 import math
 
-
-
 class AbstractDwelling(ABC):
     @abstractmethod
     def __init__ (self, area_in_square_meters = 0, price_in_USD = 0, location = location.Location(),\
@@ -44,7 +42,3 @@ class AbstractDwelling(ABC):
             if (distance < smallest_distance):
                 smallest_distance = distance
         return smallest_distance * 111000 
-
-if __name__ == "__main__":
-    a = AbstractDwelling()
-    print("klhsg")
